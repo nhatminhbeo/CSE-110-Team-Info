@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Socially Dynamic</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body ng-app="sociallyDynamic" ng-controller="MainCtrl">
+  <nav class="navbar navbar-default navbar-fixed-top">
+	  <header class="container">
+	    <div class="row">
+	    	<p class="col-sm-4" id="teamname"><i><b>S</b>ocially <b><i>D</i></b>ynamic</i></p>
+	      <nav id = "checkbox-container" class="col-sm-8 text-right">
+				<p class="nav">	
+	  				Get Sublime
+	  				<input class="nav" type="checkbox" id="sublime"/>
+	  			</p>
+	  			<p class="nav">	
+	  				Get Git Bash
+	  				<input class="nav" type="checkbox" id="gitbash"/>
+	  			</p>
+	  			<p class="nav">	
+	  				Get Node.js
+	  				<input class="nav" type="checkbox" id="nodejs"/>
+	  			</p>
+	  			<p class="nav">	
+	  				Get MongoDB
+	  				<input class="nav" type="checkbox" id="mongodb"/>
+	  			</p>
+	  			<p class="nav">	
+	  				Version Check
+	  				<input class="nav" type="checkbox" id="check"/>
+	  			</p>
+	  			<!--<p class="nav">	
+	  				Clone Git Repository
+	  				<input class="nav" type="checkbox" id="clonegit"/>
+	  			</p> //-->
+	      </nav>
+	    </div>
+	  </header>
+  </nav>
+
+  
+  <section class="container">
+    <div class="row">
+      <figure class="col-sm-12">
+      	<div class="card">
+	        <h2 id="sublime" class="title">Get Sublime</h2>
+	        <div class="body">
+	        	<h4>
+	        		We will be coding using sublime because it's the best for MEAN projects <3
+	        	</h4>
+	        	<h3>Download & install Sublime:</h3>
+	        		<p><b>Mac:</b> <a href="https://download.sublimetext.com/Sublime%20Text%20Build%203126.dmg">https://download.sublimetext.com/Sublime%20Text%20Build%203126.dmg</a></p>
+
+	        		<p><b>Windows:</b> <a href="https://download.sublimetext.com/Sublime%20Text%20Build%203126%20x64%20Setup.exe">https://download.sublimetext.com/Sublime%20Text%20Build%203126%20x64%20Setup.exe</a></p>
+	        </div>
+	    </div>
+      </figure>
+    </div>
+
+    <div class="row">
+      <figure class="col-sm-12">
+      	<div class="card">
+	        <h2 id="gitbash" class="title">Get Git Bash</h2>
+	        <div class="body">
+	        	<h4>
+	        		Git bash enables running git, nodejs, mongodb, npm, etc.. with a linux-like terminal on Windows
+	        		<br/>
+	        		(Skip if you're using macbooks)
+	        	</h4>
+	        	<h3>Download:</h3>
+	        		<p><b>Windows:</b> <a href="https://www.git-scm.com/download/win">https://www.git-scm.com/download/win</a></p>
+	        	<h3>Install:</h3>
+	        		<p> Please choose the options according to the pictures </p> <br/>
+	        		<img class="post" src="1.png"/>
+	        		<img class="post" src="2.png"/>
+	        		<img class="post" src="3.png"/>
+
+	        </div>
+	    </div>
+      </figure>
+    </div>
+
+    <div class="row">
+      <figure class="col-sm-12">
+      	<div class="card">
+	        <h2 id="nodejs" class="title" >Get Nodejs</h2>
+	        <div class="body">
+	        	<h4>
+	        		Nodejs creates the server we run on.
+	        	</h4>
+	        	<h3>Download & Install:</h3>
+	        		<p><b>Windows: </b> <a href="https://nodejs.org/dist/v6.9.5/node-v6.9.5-x86.msi">https://nodejs.org/dist/v6.9.5/node-v6.9.5-x86.msi</a></p>
+	        		<p><b>Macbooks: </b> <a href="https://nodejs.org/dist/v6.9.5/node-v6.9.5.pkg">https://nodejs.org/dist/v6.9.5/node-v6.9.5.pkg</a></p>
+	        		<a href="#sublime"> a </a>
+	        </div>
+	    </div>
+      </figure>
+    </div>
+
+    <div class="row">
+      <figure class="col-sm-12">
+      	<div class="card">
+	        <h2 id="mongodb" class="title" >Get Mongodb</h2>
+	        <div class="body">
+	        	<h4>
+	        		Mongodb is the database system we will be using.
+	        	</h4>
+	        	<h3>Windows users:</h3>
+	        		<p><b>Download & Install: </b> <a href="hhttps://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.2-signed.msi/download">https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.2-signed.msi/download</a></p>
+	        		<img class="post" src="4.png"/>
+	        		<p>Make sure you change 3.0 to 3.4 as we are using v3.4.2</p>
+	        		<p>Then we set where the database is:</p>
+	        		<p>Create folder at C:\Users\user name\database, then open up windows command line and enter:</p>
+	        		<code>mongod --dbpath C:\Users\user name\database</code>
+	        	<h3>Macbook users:</h3>
+	        		<p><b>First, install</b> <a href="http://brew.sh">Homebrew</a></p>
+	        		<p><b>Then, follow this</b> <a href="https://docs.mongodb.com/master/tutorial/install-mongodb-on-os-x/?_ga=1.169638311.705191628.1463259762"> Instruction </a></p>
+	        		<p>Then on terminal, type</p>
+	        		<code>sudo mkdir -p /data/db/</code>
+	        		<p>If there is any error, talk to Minh</p>
+	        </div>
+	    </div>
+      </figure>
+    </div>
+
+    <div class="row">
+      <figure class="col-sm-12">
+      	<div class="card">
+	        <h2 id="check" class="title" >Version check</h2>
+	        <div class="body">
+	        	<h4>
+	        		This is an important step to make sure we all have the same version of nodejs and mongodb, since everyone will be contributing to a same code repository on github.
+	        	</h4>
+	        	<h3>Windows users:</h3>
+	        		<p><b>1. Open git bash</b></p>
+	        		<p><b>2. Enter command:</b></p>
+	        			<code>node -v </code>
+	        		<p><b>and </b></p>
+	        			<code>mongod --version</code>
+	        		<p><b>The result should be: Node v6.9.5 and MongoDB v3.4.2</b></p>
+	        		<img class="post" src="5.png"/>
+	        	<h3>Macbook users:</h3>
+	        		<p><b>1.Open up command line</b></p>
+	        		<p><b>2. Enter command:</b></p>
+	        			<code>node -v </code>
+	        		<p><b>and </b></p>
+	        			<code>mongod --version</code>
+	        		<p><b>The result should be: Node v6.9.5 and MongoDB v3.4.2</b></p>
+	        		<img class="post" src="6.png"/>
+
+	        </div>
+	    </div>
+      </figure>
+    </div>
+  </section>
+  
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2017 vNmB</p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+        <li class="col-sm-1"><a href="https://www.facebook.com/nhatminhbeo"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></a></li>
+        <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+        <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

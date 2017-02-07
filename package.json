@@ -1,0 +1,18 @@
+{
+  "name": "CSE-110-Team-Info",
+  "version": "1.0.0",
+  "description": "Socially Dynamic Team Information",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Minh Tran Quoc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "morgan": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest"
+  }
+}
