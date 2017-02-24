@@ -1,9 +1,17 @@
+
+// =========================
+// Module dependencies
+// =========================
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var logger = require('morgan');
 var http = require('http');
 var app = express();
+var mongod = require("mongodb");
+
+var dburl = "mongodb://localhost:27017/example";
 
 var PORT = process.env.PORT || 3000;
 app.set('port', PORT);

@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  background-color: white
 }
 
 header {
@@ -112,16 +113,21 @@ div .body {
   border-style: solid;
   border-radius: 20px;
   text-align: center;
+  background-color: #333
 }
 
 img.post{
-  padding-left: 300px;
-  padding-right: 300px;
+  max-width:800px;
 }
 
 p.nav:hover{
   font-size: 15px;
 }
 
-p.nav {
+div .body p {
+  color: #e0e2e4;
+}
+
+div .body h2,h3,h4 {
+  color: #e784a2
 }
